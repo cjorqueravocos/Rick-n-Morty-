@@ -8,15 +8,34 @@
     <title>Rick n' Morty</title>
 </head>
 <body>
+
+    <div class="container">
+        <div id="list" class="row"></div>
+    </div>
+
+</body>
     <script>
-        
+        personajes = []
         fetch("https://rickandmortyapi.com/api/character")
         .then(res => res.json())
         .then(data => {
-            personakes = data
+            personajes = data.results
             console.log(personajes)
-        })
+            for (let i = 0; i < personajes.length; i++) {
+                var item = document.createElement("div")
+                item.innerHTML = 
+            `   <div class="card">
+                    <img src="${personajes[i].image}"
+                    <h1 class ="title">${personajes[i].name}</h1>
+                    <p class="species">${personajes[i].species}</p>
+                    <p class="status">${personajes[i].status}</p>
+                    
+                </div>
+             `
+             document.getElementById("list").appendChild(item)
+            } 
+    })
     </script>
     
-</body>
+
 </html>
