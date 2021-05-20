@@ -5,13 +5,17 @@
     font-family: sans-serif;
 }
 
+body {
+    background-image: url("screen.jpg");
+    
+}
+
 .card {
     background-color: #97ce4c;
     width: 90%;
     margin: 30px auto;
     padding: 30px;
     border-radius: 5px;
-    
     ;
     
 }
@@ -25,3 +29,10 @@ img {
     border-radius: 5px;
 }
 
+.logo {
+    max-width: 100%;    
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
