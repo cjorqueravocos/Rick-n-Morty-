@@ -9,17 +9,33 @@
 body {
     background-image: url("screen.jpg");
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
     background-color: #97ce4c;
-    width: 50%;
+    width: 70%;
     margin: 20px auto;
     padding: 10px;
     border-radius: 5px;
+    display: flex;
+
 }
 
+.card img {
+    width: 50%;
+}
+
+.card .data {
+    align-items: center;
+    margin-left: 10px;
+}
 h1 {
     font-size: 20px;
 }
@@ -45,4 +61,10 @@ align-items: left;
 
 .name {
     font-size: 2em,
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
