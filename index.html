@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,28 @@
     <link rel="stylesheet" href="style.css">
     <title>Rick n' Morty</title>
 </head>
-<body>
-    <div class="logo" img="logo">
-        <img src="logo.png" alt="Rick n Morty's Logo">
-    </div>
-    <div class="container">
-        <div id="list" class="row"></div>
-    </div>
 
+<body>
+    <div class="body-container">
+        <div class="logo" img="logo">
+            <img src="logo.png" alt="Rick n Morty's Logo">
+        </div>
+        <div class="container">
+            <div id="list" class="row"></div>
+        </div>
+    </div>
 </body>
-    <script>
-        personajes = []
-        fetch("https://rickandmortyapi.com/api/character")
+<script>
+    personajes = []
+    fetch("https://rickandmortyapi.com/api/character")
         .then(res => res.json())
         .then(data => {
             personajes = data.results
             console.log(personajes)
             for (let i = 0; i < personajes.length; i++) {
                 var item = document.createElement("div")
-                item.innerHTML = 
-            `   <div class="card">
+                item.innerHTML =
+                    `   <div class="card">
                     <img src="${personajes[i].image}">
                     <div class="data">
                     <h1 class="name">${personajes[i].name}</h1>
@@ -35,10 +38,10 @@
                     </div>
                 </div>
              `
-             document.getElementById("list").appendChild(item)
-            } 
-    })
-    </script>
-    
+                document.getElementById("list").appendChild(item)
+            }
+        })
+</script>
+
 
 </html>

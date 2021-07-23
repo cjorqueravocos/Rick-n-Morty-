@@ -6,13 +6,13 @@
 }
 
 
-body {
+.body-container{
     background-image: url("screen.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    
 }
+
 .row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -25,7 +25,6 @@ body {
     padding: 10px;
     border-radius: 5px;
     display: flex;
-
 }
 
 .card img {
@@ -47,8 +46,8 @@ img {
 
 .logo {
     max-width: 100%;    
-    padding: 30px;
-    margin: 30px;
+    /* padding: 30px;
+    margin: 30px; */
     display: flex;
     justify-content: center;
 }
