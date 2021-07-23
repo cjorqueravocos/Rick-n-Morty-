@@ -28,10 +28,11 @@
                 item.innerHTML = 
             `   <div class="card">
                     <img src="${personajes[i].image}">
+                    <div class="data">
                     <h1 class="name">${personajes[i].name}</h1>
                     <p class="species">${personajes[i].species}</p>
                     <p class="status">${personajes[i].status}</p>
-                    
+                    </div>
                 </div>
              `
              document.getElementById("list").appendChild(item)

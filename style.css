@@ -5,19 +5,19 @@
     font-family: sans-serif;
 }
 
+
 body {
     background-image: url("screen.jpg");
+    background-attachment: fixed;
     
 }
 
 .card {
     background-color: #97ce4c;
-    width: 90%;
-    margin: 30px auto;
-    padding: 30px;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
     border-radius: 5px;
-    ;
-    
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
 }
 
 img {
-    width: 20%;
+    width: 60%;
     border-radius: 5px;
 }
 
@@ -35,4 +35,14 @@ img {
     margin: 30px;
     display: flex;
     justify-content: center;
+}
+
+.data {
+    float: right;
+align-items: left;
+}
+
+
+.name {
+    font-size: 2em,
 }
